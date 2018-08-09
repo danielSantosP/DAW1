@@ -1,29 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>Exercicio 8</title>
 	<meta charset="utf-8">
 	<script type="text/javascript" src="function.js"></script>
-	<title>Exercicio 7</title>
 </head>
 <body>
-	<form method="GET" action="function.php" id="idForm" onsubmit="return fieldValidation()">
+	<form method="POST" action="function.php" id="idForm">
 		<label>
-			Número 1:
-			<input type="text" name="numbers[]" id="idNote1" required="">
+			Nome: 
+			<input type="text" name="name" id="idName" required="">
 		</label>
 		<br>
 		<label>
-			Número 2:
-			<input type="text" name="numbers[]" id="idNote2" required="">
+			Senha: 
+			<input type="password" name="passw" id="idPassword" required="">
 		</label>
 		<br>
-		<label>
-			Número 3:
-			<input type="text" name="numbers[]" id="idNote3" required="">
-		<br>
-		</label>
-		<br>
-		<button type="submit" name="submit">Verificar o maior</button>
+		<button type="submit" name="submit">Login</button>
 	</form>
 </body>
 </html>

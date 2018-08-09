@@ -1,12 +1,12 @@
 <?php
-	if (isset($_GET['submit'])){
+	if (isset($_POST['submit'])) {
+		$name = $_POST['name'];
+		$password = $_POST['passw'];
 
-		$numb = $_GET['numbers'];
-		rsort($numb);
-		if ($numb[0] == '') {
-			echo "Não tem numeros inseridos";
-		}else{
-			echo "O maior numero é: " . $numb[0];
-		}
+		if ($name == "etec" && $password == "informatica") {
+			echo "Logado com sucesso!";
+		}else
+			echo "Login não aceito! Tente novamente!";
 	}
+
 ?>
