@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Exercicio 8</title>
+	<title>Exercicio 9</title>
 	<meta charset="utf-8">
 	<script type="text/javascript" src="function.js"></script>
 </head>
@@ -9,15 +9,31 @@
 	<form method="POST" action="function.php" id="idForm">
 		<label>
 			Nome: 
-			<input type="text" name="name" id="idName" required="">
+			<input type="text" name="name" required="" id="idName">
 		</label>
 		<br>
 		<label>
-			Senha: 
-			<input type="password" name="passw" id="idPassword" required="">
+			E-mail: 
+			<input type="email" name="mail" required="" id="idMail">
 		</label>
 		<br>
-		<button type="submit" name="submit">Login</button>
+		<label>
+			Data de nascimento: 
+			<input type="date" name="date" required="" id="idDate">
+		</label>
+		<br>
+		<label>
+			Bandeira do cartão:
+			<select name="select">
+				<option value="Visa">Visa</option>
+				<option value="Mastercard">Mastercard</option>
+				<option value="Elo">Elo</option>
+				<option value="Hipercard">Hipercard</option>
+				<option value="American Express">American Express</option>
+			</select>
+		</label>
+		<br>
+		<button type="submit" name="submit">Enviar</button>
 	</form>
 </body>
 </html>
