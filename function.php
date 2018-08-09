@@ -1,11 +1,12 @@
 <?php
 	if (isset($_POST['submit'])) {
 		$name = $_POST['name'];
-		$mail = $_POST['mail'];
-		$date = $_POST['date'];
-		$optionSelect = $_POST['select'];
+		$password = $_POST['passw'];
 
-		echo "Nome: " . $name . "<br>E-mail: " . $mail . "<br>Data de nascimento: " . $date . "<br>Bandeira do cartão: " . $optionSelect;
+		if ($name == "etec" && $password == "informatica") {
+			echo "Logado com sucesso!";
+		}else
+			echo "Login não aceito! Tente novamente!";
 	}
-	
- ?>
+
+?>
