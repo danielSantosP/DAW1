@@ -1,34 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Exercicio 6</title>
 	<meta charset="utf-8">
 	<script type="text/javascript" src="function.js"></script>
+	<title>Exercicio 7</title>
 </head>
 <body>
-	<form method="GET" action="function.php" id="idForm" onsubmit="return fieldValidation()" name="form">
-		<h2>Notas do aluno</h2>
+	<form method="GET" action="function.php" id="idForm" onsubmit="return fieldValidation()">
 		<label>
-			Nome: 
-			<input type="text" name="name"  id="idName" required="">
+			Número 1:
+			<input type="text" name="numbers[]" id="idNote1" required="">
 		</label>
 		<br>
 		<label>
-			Nota 1: 
-			<input type="number" name="numbers[]"  id="idNote1" required="" min="0" max="10">
+			Número 2:
+			<input type="text" name="numbers[]" id="idNote2" required="">
 		</label>
 		<br>
 		<label>
-			Nota 2: 
-			<input type="number" name="numbers[]"  id="idNote2" required="" min="0" max="10">
+			Número 3:
+			<input type="text" name="numbers[]" id="idNote3" required="">
+		<br>
 		</label>
 		<br>
-		<label>
-			Nota 3: 
-			<input type="number" name="numbers[]"  id="idNote3" required="" min="0" max="10">
-		</label>
-		<br>
-		<button type="submit" name="submit">Calcular média</button>
+		<button type="submit" name="submit">Verificar o maior</button>
 	</form>
 </body>
 </html>

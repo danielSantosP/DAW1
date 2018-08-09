@@ -1,16 +1,10 @@
 function fieldValidation(){
 	var form = document.getElementById("idForm");
-	var name = form.idName;
 	var note1 = form.idNote1;
 	var note2 = form.idNote2;
 	var note3 = form.idNote3;
 
-	if(name.value == ""){
-		alert('Preencha o campo "Nome"');
-
-	}
-
-	if(note1.value == "" ){
+	if(note1.value == ""){
 		alert('Preencha o campo "Nota 1"');
 
 	}
