@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="function.js"></script>
+<head>
+	<title>Lista de exercicio 1</title>
+</head>
+<body>
+	<form method="POST" id="idForm" action="function.php">
+		<h3>Exercicio 1</h3>
+		<label> Numero 1: </label>
+			<input type="text" name="n1">
+		<br>
+		<label> Numero 2: </label>
+			<input type="text" name="n2">
+		<br>
+		<label> Numero 3: </label>
+			<input type="text" name="n3">
+		<br>
+		<label> Numero 4: </label>
+			<input type="text" name="n4">
+		<br>
+		<label> Numero 5: </label>
+			<input type="text" name="n5">
+		<br>
+		<label> Numero 6: </label>
+			<input type="text" name="n6">
+		<br>
+		<label> Numero 7: </label>
+			<input type="text" name="n7">
+		<br>
+		<label> Numero 8: </label>
+			<input type="text" name="n8">
+		<br>
+		<label> Numero 9: </label>
+			<input type="text" name="n9">
+		<br>
+		<label> Numero 10: </label>
+			<input type="text" name="n10">
+		<br>
+		<br>
+		<h3>Exercicio 2</h3>
+		<label> Numero 1: </label>
+			<input type="text" name="numbers[]">
+		<br>
+		<label> Numero 2: </label>
+			<input type="text" name="numbers[]">
+		<br>
+		<label> Numero 3: </label>
+			<input type="text" name="numbers[]">
+		<br>
+		<label> Numero 4: </label>
+			<input type="text" name="numbers[]">
+		<br>
+		<label> Numero 5: </label>
+			<input type="text" name="numbers[]">
+		<br>
+		<br>
+		<h3>Exercicio 3</h3>
+		<input type="text" name="ages[]">
+		<button onclick="createInputAges()" type="button">Adicionar idade</button>
+		<div id="idAddAges">	
+		</div>
+		<br>
+		<br>
+		<h3>Exercicio 4</h3>
+		<input type="text" name="names[]">
+		<button onclick="createInputNames()" type="button">Adicionar Nome</button>
+		<div id="idAddNames">	
+		</div>
+		<br>
+		<br>
+		<h3>Exercicio 5</h3>
+		<label>Insira uma data (DD/MM/AAAA): 
+			<input type="text" name="date">
+		</label>
+		<br>
+		<br>
+		<button type="submit" name="submit">Resultados</button>
+	</form>
+</body>
+</html>
