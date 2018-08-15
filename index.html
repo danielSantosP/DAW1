@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Exercicio 9</title>
 	<meta charset="utf-8">
+	<title>Exercicio 1</title>
+
 	<script type="text/javascript" src="function.js"></script>
 </head>
 <body>
-	<form method="POST" action="function.php" id="idForm">
-		<label>
-			Nome: 
-			<input type="text" name="name" required="" id="idName">
-		</label>
-		<br>
-		<label>
-			E-mail: 
-			<input type="email" name="mail" required="" id="idMail">
-		</label>
-		<br>
-		<label>
-			Data de nascimento: 
-			<input type="date" name="date" required="" id="idDate">
-		</label>
-		<br>
-		<label>
-			Bandeira do cartão:
-			<select name="select">
-				<option value="Visa">Visa</option>
-				<option value="Mastercard">Mastercard</option>
-				<option value="Elo">Elo</option>
-				<option value="Hipercard">Hipercard</option>
-				<option value="American Express">American Express</option>
-			</select>
-		</label>
-		<br>
-		<button type="submit" name="submit">Enviar</button>
+	<form action="function.php" id="idForm" method="post">
+		
+
+		<label>Nome: 
+			<input type="text" name="firstName[]" id="idFirst" required="">
+		</label><br>
+		<label>Sobrenome:  
+			<input type="text" name="lastName[]" id="idLast" required="">
+		</label><br>
+		<label>Idade:  
+			<input type="number" name="age[]" id="idAge" required="">
+		</label><br>
+		<label>Sexo:  
+			<input type="text" name="sex[]" id="idSex" required="">
+		</label><br>
+		<label>Data de nascimento:  
+			<input type="date" name="date[]" id="idDate" required="">
+		</label><br>
+
+		<div id="createInputs">
+
+		</div>
+
+		<!-- botão -->
+		
+		<button type="button" name="insert" id="idInsert" onclick="createInputs()">Inserir</button>
+		<button type="submit" name="submit" id="idSubmit">Enviar</button>
 	</form>
 </body>
 </html>
